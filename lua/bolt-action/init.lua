@@ -124,7 +124,7 @@ function M.show_slots_window()
   -- Set buffer content
   vim.api.nvim_buf_set_lines(buf, 0, -1, false, lines)
 
-  -- Put cursor at under header
+  -- Put cursor under header
   vim.api.nvim_win_set_cursor(win, { 3, 0 })
 
   -- Add syntax highlighting
@@ -161,6 +161,7 @@ function M.show_slots_window()
       if slot and slot > 0 and slot < 10 then
         M.delete_slot(slot)
         vim.api.nvim_buf_set_lines(buf, line - 1, line, false, { line_str })
+        vim.api.nvim_buf_add_highlight(buf, -1, 'Comment', line - 1, 7, -1)
       end
     end,
   })
