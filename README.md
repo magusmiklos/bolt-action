@@ -6,6 +6,7 @@ This is a Neovim plugin used for quick, (blazingly-fast) navigation.
 ![image](https://github.com/user-attachments/assets/4be8bfe8-03e9-4407-aff5-f63db68e0263)
 
 The idea is that you can create "bookmarks" in different files and then quickly jump to them.
+Also, your bookmarks are saved in a file, so they don't disappear after exiting Vim (`:q!`).
 
 ## How to really use this thing
 There are 9 slots that you can use for your bookmarks, numbered from 1 to 9.
