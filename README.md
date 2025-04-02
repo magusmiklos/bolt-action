@@ -3,7 +3,8 @@
 ## Bolt Action what is it used for?
 This is a Neovim plugin used for quick, (blazingly-fast) navigation.
 
-![image](https://github.com/user-attachments/assets/4be8bfe8-03e9-4407-aff5-f63db68e0263)
+![Screencastfrom2025-04-0216-08-17-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/a2e14971-ff84-483f-99b7-3af00abdd34d)
+
 
 The idea is that you can create "bookmarks" in different files and then quickly jump to them.
 Also, your bookmarks are saved in a file, so they don't disappear after exiting Vim (`:q!`).
