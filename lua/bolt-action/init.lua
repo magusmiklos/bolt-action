@@ -40,7 +40,7 @@ end
 function M.delete_slot(slot)
   M.slots[slot] = nil
   save_slots()
-  print('Slot was deleted' .. slot)
+  print('Slot was deleted ' .. slot)
 end
 
 function M.add_to_slot(slot)
@@ -112,13 +112,13 @@ function M.show_slots_window()
     local slot = M.slots[i]
     local status
     if type(slot) == 'table' and type(slot.file) == 'string' then
-      status = '● ' .. vim.fn.fnamemodify(slot.file, ':~:.')
+      status = '● ' .. vim.fn.fnamemodify(slot.file .. ' line: ' .. slot.pos[1] .. ' col: ' .. slot.pos[2], ':~:.')
     else
       status = '○ Empty'
     end
     lines[i] = string.format(' %d: %s', i, status)
   end -- Add header
-  table.insert(lines, 1, ' Bolt Action')
+  table.insert(lines, 1, ' Bolt Action ( -_•)▄︻デ══━一')
   table.insert(lines, 2, string.rep('─', width - 2))
 
   -- Set buffer content
